@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="formfn.js"></script>
+<link rel="stylesheet" href="form.css">
+    <style>
+    #rc{
+      border-radius:25px;
+      background:#f4ebfa;
+    }
+    </style>
+  </head>
+  <body style="background-color:#f1d9ff">
+    <div class="container pt-3 " id="rc">
+      <h3 class="font-weight-bolder">Enter your details</h3>
+<form class="form-horizontal" >
+  <div class="form-group">
+<label for="name">Name</label>
+<input type="text" class="form-control" placeholder="Enter Name" id="name">
+</div>
+
+  <div class="form-group">
+<label for="cno">Contact No</label>
+<input type="text" class="form-control" placeholder="Enter Contact No" id="cno">
+</div>
+
+<div class="form-group">
+<label for="mail">E-mail</label>
+<input type="text" class="form-control" placeholder="Enter E-mail ID" id="mail">
+</div>
+
+  <div class="form-group">
+<label for="lid">Linkedin </label>
+<input type="text" class="form-control" placeholder="Enter Linkedin acct" id="lid">
+</div>
+
+<!--to add more than one qualification-->
+Education
+<div id="edq" style="border-style:groove">
+   <div class="form-group" id="ed">
+<label for="ins">Institution</label>
+<input type="text" class="form-control" placeholder="Enter Institution" id="ins">
+</div>
+
+   <div class="form-group" id="q">
+<label for="grade">Grade</label>
+<input type="text" class="form-control" placeholder="Enter grade" id="grade">
+
+</div></div>
+
+<button type="button" class="btn btn-dark" onClick="Add_ed()">Add</button>
+
+<br>
+<br>
+
+Work Experience
+<!--to add work experience-->
+<div id="work" style="border-style:groove">
+   <div class="form-group" id="comp">
+<label for="cmp">Company</label>
+<input type="text" class="form-control" placeholder="Enter Company" id="cmp">
+</div>
+   <div class="form-group" id="exp">
+<label for="yoe">Experience</label>
+<input type="text" class="form-control" placeholder="Enter experience" id="yoe">
+</div></div>
+<button type="button" class="btn btn-dark" onclick="Add_we()">Add</button>
+<br>
+<br>
+
+Projects
+<!--projects-->
+<div id="proj" style="border-style:groove">
+   <div class="form-group" id="pt">
+<label for="pj">Project-Title</label>
+<input type="text" class="form-control" placeholder="Enter project title" id="pj">
+</div>
+<div class="form-group" id="pd">
+<label for="pjd">Project description or link</label>
+<input type="text" class="form-control" placeholder="Enter project title" id="pjd">
+</div> </div>
+<button type="button" class="btn btn-dark" onclick="Add_proj()">Add</button>
+<br><br>
+Skills
+<!--skills-->
+<div id="oskl" style="border-style:groove">
+   <div class="form-group" id="skll" >
+<label for="skills">Skills</label>
+<input type="text" class="form-control" placeholder="Enter skill" id="skills">
+</div>
+</div>
+
+<button type="button" class="btn btn-dark" onclick="Add_skill()">Add</button>
+
+<br><br>
+<!--achievements-->
+Achievements
+<div id="achm" style="border-style:groove" >
+   <div class="form-group" id="acht" >
+<label for="achievement">Achievements</label>
+<input type="text" class="form-control" placeholder="Enter achievements" id="achievement">
+</div>
+</div>
+
+<button type="button" class="btn btn-dark" onclick="Add_ach()">Add</button>
+<br>
+<input type="submit" class="mx-auto d-block btn btn-outline-dark" value="Create">
+<br>
+</form>
+    </div>
+  </body>
+</html>
